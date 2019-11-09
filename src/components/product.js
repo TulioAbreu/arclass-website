@@ -13,6 +13,10 @@ class Product extends React.Component {
         this.ratingsValue = ratingsValue
     }
 
+    getPrice() {
+        return this.price
+    }
+
     render() {
         return (
             <div className="product-container">

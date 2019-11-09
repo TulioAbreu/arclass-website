@@ -19,13 +19,11 @@ export default function Shop({ history }) {
         products.push(product);
     }
 
-    let productsList = new ProductList(products)
-
     return (
         <div className="shop-container">
             <Header/>
             <div className="products-container">
-                { productsList.render() }
+                { ProductList(products) }
             </div>
         </div>
     )
