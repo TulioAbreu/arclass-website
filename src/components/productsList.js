@@ -25,23 +25,25 @@ export default function ProductList(products) {
     let filteredProducts = filterProducts(products, lowerPrice, higherPrice)
 
     return (
-        <div className="productlist-container">
+        <div className="products-list-container">
             <div className="filter-container">
-                De: R$ <input type="text" name="minValue" value={lowerPrice} onChange={e => setLowerPrice(e.target.value)}/>
-                <br/>
-                Até: R$ <input type="text" name="minValue" value={higherPrice} onChange={e => setHigherPrice(e.target.value)}/>
+                De: R$ <input className="inputFilter" type="text" name="minValue" value={lowerPrice} onChange={e => setLowerPrice(e.target.value)}/>
+                Até: R$ <input className="inputFilter" type="text" name="minValue" value={higherPrice} onChange={e => setHigherPrice(e.target.value)}/>
             </div>
-            <ul>
-                {
-                    filteredProducts.map((product, index) => (
-                        <li>
-                            <React.Fragment key={ index }>
-                                { product.render() }
-                            </React.Fragment>
-                        </li>
-                    ))
-                }
-            </ul>
+
+            <div className="productlist-container">
+                <ul>
+                    {
+                        filteredProducts.map((product, index) => (
+                            <li>
+                                <React.Fragment key={ index }>
+                                    { product.render() }
+                                </React.Fragment>
+                            </li>
+                        ))
+                    }
+                </ul>
+            </div>
         </div>
     )
 }
