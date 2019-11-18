@@ -24,7 +24,7 @@ export default function Shop({ history }) {
     return (
         <div className="shop-container">
             { Header('loja') }
-            <div className="products-container">
+            <div className="products-container mt-5">
                 { ProductList(products) }
             </div>
         </div>
