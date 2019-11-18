@@ -1,6 +1,5 @@
 import React, {useState, setState} from 'react'
 import Product from './product'
-import './productsList.css'
 
 
 export default function ProductList(products) {
@@ -25,24 +24,35 @@ export default function ProductList(products) {
     let filteredProducts = filterProducts(products, lowerPrice, higherPrice)
 
     return (
-        <div className="products-list-container">
-            <div className="filter-container">
-                De: R$ <input className="inputFilter" type="text" name="minValue" value={lowerPrice} onChange={e => setLowerPrice(e.target.value)}/>
-                Até: R$ <input className="inputFilter" type="text" name="minValue" value={higherPrice} onChange={e => setHigherPrice(e.target.value)}/>
-            </div>
-
-            <div className="productlist-container">
-                <ul>
-                    {
-                        filteredProducts.map((product, index) => (
-                            <li>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-2" id="sticky-sidebar">
+                    <div class="container sticky-top">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">Valor Mínimo R$</span>
+                            </div>
+                            <input type="text" class="form-control" aria-label="Quantia" value={lowerPrice} onChange={e => setLowerPrice(e.target.value)}   />
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">Valor Máximo R$</span>
+                            </div>
+                            <input type="text" class="form-control" aria-label="Quantia" value={higherPrice} onChange={e => setHigherPrice(e.target.value)}/>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-9" id="main">
+                    <div class="card-columns">
+                        {
+                            filteredProducts.map((product, index) => (
                                 <React.Fragment key={ index }>
                                     { product.render() }
                                 </React.Fragment>
-                            </li>
-                        ))
-                    }
-                </ul>
+                            ))
+                        }
+                    </div>
+                </div>
             </div>
         </div>
     )

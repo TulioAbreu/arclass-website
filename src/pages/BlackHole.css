@@ -1,0 +1,89 @@
+.main-container {
+
+}
+
+.black-hole-box {
+    width: 60%;
+
+    margin: auto;
+    margin-top: 50px;
+
+    padding: 30px;
+    padding-bottom: 100px;
+    
+    border: solid rgb(90, 90, 90);
+    border-width: 2px;
+    border-radius: 5px;
+
+}
+
+.black-hole-box h1 {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: rgb(90, 90, 90);
+    text-transform: uppercase;
+}
+
+.black-hole-box h3 {
+    text-align: justify;
+    font-weight: lighter;
+    font-size: 25px;
+    margin-bottom: 10%;
+    padding-right: 3%;
+}
+
+.black-hole-left-box {
+    width: 50%;
+    max-width: 50%;
+    display: inline-block;
+}
+
+.black-hole-right-box {
+    width: 50%;
+    max-width: 50%;
+    display: inline-block;
+}
+
+.black-hole-picture {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    border-radius: 5px;
+}
+
+
+.black-hole-price {
+    font-size: 40px;
+    color: #2c6eb4;
+    margin-bottom: 20px;
+    text-align: right;
+    margin-right: 2%;
+}
+
+.black-hole-buy-button {
+    max-width: 100%;
+    margin-right: 0px;
+    background-color: rgb(119, 5, 200);
+    border-style: solid;
+    border-color: rgb(119, 5, 200);
+    color: white;
+    font-size: 20px;
+    padding: 15px 30px 15px 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: 2%;
+}
+
+.black-hole-buy-button:hover {
+    background-color: white;
+    color: rgb(119, 5, 200);
+    cursor: pointer;
+}
+
+.black-hole-ratings {
+    text-align: right;
+    padding-top: 30px;
+    padding-right: 10%;
+}
