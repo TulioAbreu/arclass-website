@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react'
 import Header from '../components/headerBar.js'
 
 import './Product.css'
-
 import starSVG from '../assets/star.svg'
 import qrCode from '../assets/qrcode.jfif'
 
@@ -12,7 +11,8 @@ var images = require.context('../assets/pictures', true);
 export default function Main({ match, history }) {
     const [ showQrPopup, setShowQrPopup ] = useState(false)
 
-    let id = isNaN(match.params.product_id)? 0:match.params.product_id
+    let pageId = match.params.product_id
+    let id = (isNaN(pageId) || pageId < 0 || pageId >= productList["list"].length)? 0:pageId
     
     let product = productList["list"][id]
     return (
