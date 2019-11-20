@@ -2,24 +2,26 @@ import React, {useState, setState} from 'react'
 import Product from './product'
 
 
-export default function ProductList(products) {
+export default function ProductList(products, history) {
     const [lowerPrice, setLowerPrice] = useState(0)
     const [higherPrice, setHigherPrice] = useState(9999)
 
     
     function filterProducts(productsList, lowerPrice, higherPrice) {
         let newList = []
-    
+
         for (let i = 0; i < productsList.length; ++i) {
             let product = productsList[i]
-    
-            if (product.getPrice() >= lowerPrice && product.getPrice() <= higherPrice) {
-                newList.push(product)
+
+            if (product["price"] >= lowerPrice && product["price"] <= higherPrice) {
+                let newProduct = new Product(i, product["name"], product["price"], product["imgURL"], product["votesNumber"], product["votesValue"])
+                newList.push(newProduct)
             }
         }
     
         return newList
     }
+
 
     let filteredProducts = filterProducts(products, lowerPrice, higherPrice)
 

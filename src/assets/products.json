@@ -1,0 +1,53 @@
+{
+    "list": [
+        {
+            "name": "Modelo de Buraco Negro",
+            "price": 10.0,
+            "description": "Este pacote contém um modelo em 3D de um Buraco Negro para ser utilizado pelo aplicativo.",
+            "imgURL": "./asset0.jpg",
+            "votesNumber": 10,
+            "votesValue": 4.5
+        },
+        {
+            "name": "Corpo Humano - Superior",
+            "price": 0.0,
+            "description": "Este pacote contém um modelo em 3D simplificado da parte superior do corpo humano.",
+            "imgURL": "./asset1.png",
+            "votesNumber": 25,
+            "votesValue": 4.0
+        },
+        {
+            "name": "Modelo de Cicada Pomponia",
+            "price": 0.0,
+            "description": "A stunning Pomponia cicada from Thailand, part of the super family called Cicadidae. The Pomponia is a genus of cicada, a family of large flying insects. Most of the large cicadas have been placed in this genus, but recent authroites have moved some of these into Magapomponia instead.",
+            "imgURL": "./asset2.png",
+            "votesNumber": 132,
+            "votesValue": 5.0
+        },
+        {
+            "name": "Modelo de Cachorro",
+            "price": 49.90,
+            "description": "Sem descrição fornecida.",
+            "imgURL": "./asset3.jpeg",
+            "votesNumber": 42,
+            "votesValue": 4.3
+        },
+        {
+            "name": "Modelo de Sistema Solar",
+            "price": 19.0,
+            "description": "Este pacote contém modelos em 3D demonstrando o sistema solar.",
+            "imgURL": "./asset4.jpeg",
+            "votesNumber": 22,
+            "votesValue": 3.8
+        },
+        {
+            "name": "Modelo de Átomo",
+            "price": 9.0,
+            "description": "Este pacote contém modelos em 3D demonstrando um átomo.",
+            "imgURL": "./asset5.jpeg",
+            "votesNumber": 0,
+            "votesValue": 0
+        }
+
+    ]
+}

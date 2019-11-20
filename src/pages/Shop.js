@@ -5,28 +5,24 @@ import Header from '../components/headerBar'
 import Product from '../components/product'
 import ProductList from '../components/productsList'
 
-import productExample from '../assets/productExample1.json'
+import productsList from '../assets/products.json'
+
 
 export default function Shop({ history }) {
-    let product = new Product(
-        productExample["name"],
-        productExample["price"],
-        productExample["imgURL"],
-        productExample["votesNumber"],
-        productExample["votesValue"]
-    )
+    console.log(productsList)
 
-    let products = [];
-    for (let i = 0; i < 21; ++i) {
-        products.push(product);
-    }
 
     return (
-        <div className="shop-container">
+        <div className="shop-container"  style={{'background-color': 'rgb(230,230,230)'}}>
             { Header('loja') }
             <div className="products-container mt-5">
-                { ProductList(products) }
+                { ProductList(productsList["list"], history) }
             </div>
+
+            <div class="bg-primary p-3 text-white font-weight-bold text-center mt-5">
+                ARClass - Esta página é apenas uma amostra, os conteúdos exibidos pertencem aos seus respectivos criadores
+            </div>
+
         </div>
     )
 }
