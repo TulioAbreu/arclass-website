@@ -43,6 +43,14 @@ export default function Main({ history }) {
                                         de entretenimento, como os jogos...</p>
                                 </div>
                             </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100"
+                                    src="https://portalsbn.com.br/tim.php?src=uploads/images/2019/08/realidade-aumentada-facilita-aprendizagem-durante-aulas-de-geografia-em-cariacica-8.jpg&w=960&h=490"
+                                    alt="Terceiro Slide" />
+                                <div class="carousel-caption d-none d-md-block alert alert-dark" role="alert">
+                                    <h5>ARClass, a sua metodologia de ensino </h5>
+                                </div>
+                            </div>
                         </div>
                         <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
