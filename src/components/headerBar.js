@@ -30,13 +30,13 @@ export default function Header(page) {
             </div>
 
 
-            <div class="navbar-brand logoFont"> <img className="logoImg" src={logo} width="20%"/>ARClass</div>
+            <div class="navbar-brand logoFont"> <img className="logoImg mr-1" src={logo} width="20%"/>ARClass</div>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#textoNavbar" aria-controls="textoNavbar" aria-expanded="false" aria-label="Alterna navegação">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="textoNavbar">
                 <ul class="navbar-nav mr-auto">
-                <li class={"nav-item  mr-5 " + (page == "inicio"? "active font-weight-bold":"")}>
+                <li class={"nav-item  mr-5" + (page == "inicio"? "active font-weight-bold":"")}>
                     <a class="nav-link" href="/">Início <span class="sr-only">(Página atual)</span></a>
                 </li>
                 <li class={"nav-item  mr-5  " + (page == "loja"? "active font-weight-bold":"")}>
