@@ -31,7 +31,7 @@ export default function Main({ match, history }) {
                     <div class="modal-body">
                         <p>Este é o seu QRCode para utilização do modelo adquirido:</p>
                         <div class="text-center">
-                            <img src={qrCode} alt="star" width="300"/>
+                            <img src={images(product["qrCodeURL"])} alt="star" width="300"/>
                         </div>
                     </div>
                     <div class="modal-footer">

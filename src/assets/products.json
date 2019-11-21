@@ -5,6 +5,7 @@
             "price": 10.0,
             "description": "Este pacote contém um modelo em 3D de um Buraco Negro para ser utilizado pelo aplicativo.",
             "imgURL": "./asset0.jpg",
+            "qrCodeURL": "./qr_asset0.png",
             "votesNumber": 10,
             "votesValue": 4.5
         },
@@ -13,6 +14,7 @@
             "price": 0.0,
             "description": "Este pacote contém um modelo em 3D simplificado da parte superior do corpo humano.",
             "imgURL": "./asset1.png",
+            "qrCodeURL": "./qr_asset1.png",
             "votesNumber": 25,
             "votesValue": 4.0
         },
@@ -21,6 +23,7 @@
             "price": 0.0,
             "description": "A stunning Pomponia cicada from Thailand, part of the super family called Cicadidae. The Pomponia is a genus of cicada, a family of large flying insects. Most of the large cicadas have been placed in this genus, but recent authroites have moved some of these into Magapomponia instead.",
             "imgURL": "./asset2.png",
+            "qrCodeURL": "./qr_asset2.png",
             "votesNumber": 132,
             "votesValue": 5.0
         },
@@ -29,6 +32,7 @@
             "price": 49.90,
             "description": "Sem descrição fornecida.",
             "imgURL": "./asset3.jpeg",
+            "qrCodeURL": "./qr_asset3.png",
             "votesNumber": 42,
             "votesValue": 4.3
         },
@@ -37,6 +41,7 @@
             "price": 19.0,
             "description": "Este pacote contém modelos em 3D demonstrando o sistema solar.",
             "imgURL": "./asset4.jpeg",
+            "qrCodeURL": "./qr_asset4.png",
             "votesNumber": 22,
             "votesValue": 3.8
         },
@@ -45,6 +50,7 @@
             "price": 9.0,
             "description": "Este pacote contém modelos em 3D demonstrando um átomo.",
             "imgURL": "./asset5.jpeg",
+            "qrCodeURL": "./qr_asset5.png",
             "votesNumber": 0,
             "votesValue": 0
         }
