@@ -1,6 +1,6 @@
 import React from 'react'
 import underConstruction from '../assets/underConstruction.png'
-import logo from '../assets/logoBlack.png'
+import logo from '../assets/logo.png'
 import './headerBar.css'
 
 export default function Header(page) {
@@ -30,22 +30,22 @@ export default function Header(page) {
             </div>
 
 
-            <div class="navbar-brand logoFont"> <img className="logoImg mr-1" src={logo} width="20%"/>ARClass</div>
+            <div class="navbar-brand logoFont"> <img className="logoImg mr-1" src={logo} width="20%"/></div>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#textoNavbar" aria-controls="textoNavbar" aria-expanded="false" aria-label="Alterna navegação">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="textoNavbar">
-                <ul class="navbar-nav mr-auto">
-                <li class={"nav-item  mr-5" + (page == "inicio"? "active font-weight-bold":"")}>
-                    <a class="nav-link" href="/">Início <span class="sr-only">(Página atual)</span></a>
+                <ul class="navbar-nav">
+                <li class={"nav-item  ml-4 mr-4 " + (page == "inicio"? "active font-weight-bold":"")}>
+                    <a class="nav-link" href="/">Início</a>
                 </li>
-                <li class={"nav-item  mr-5  " + (page == "loja"? "active font-weight-bold":"")}>
+                <li class={"nav-item  ml-4 mr-4 " + (page == "loja"? "active font-weight-bold":"")}>
                     <a class="nav-link" href="/shop">Loja</a>
                 </li>
-                <li class="nav-item  mr-5 ">
+                <li class="nav-item  ml-4 mr-4">
                     <a class="nav-link" href="#" data-toggle="modal" data-target={"#devModal"}>Seus Conteúdos</a>
                 </li>
-                <li class="nav-item  mr-5 ">
+                <li class="nav-item  ml-4 mr-4">
                     <a class="nav-link" href="#" data-toggle="modal" data-target={"#devModal"} >Sua Conta</a>
                 </li>
                 </ul>

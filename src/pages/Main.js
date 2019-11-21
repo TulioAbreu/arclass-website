@@ -67,10 +67,10 @@ export default function Main({ history }) {
 
             <div class="w-75 container">
                 <div class="bg-white rounded m-3 p-5">
-                    <h1 class="display-4">O futuro chegou!</h1>
-                    <p class="lead">Este é um texto motivador!</p>
+                    <h1 class="display-4">O futuro está ao alcance de sua sala de aula!</h1>
+                    <p class="lead">Com ARClass você pode apresentar conteúdos 3D interativos em realidade virtual ou aumentada durante as suas apresentações!</p>
                     <hr class="my-4"/>
-                    <p>Nossa loja está....</p>
+                    <p>A loja do site está repleta de modelos criados pela comunidade!</p>
                     <p class="lead">
                         <a class="btn btn-primary btn-lg" href="/shop" role="button">Conheça nossa loja</a>
                     </p>
